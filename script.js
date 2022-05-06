@@ -12,10 +12,11 @@ function generatePassword() {
   var finalPassword = '';
 
 var characterLength = prompt("Choose a password length between 8-128 character.");
- if(isNaN(characterLength)){
-   alert("Please enter a numeric value.");
-   return;
- }
+  if(isNaN(characterLength)){
+    alert("Please enter a numeric value.");
+    return;
+  }
+
   if(confirm("Do you want to include lowercase in your password?")){
     selectedChars +=  useLowercase; 
     finalPassword += useLowercase[Math.floor(Math.random()*useLowercase.length)];
