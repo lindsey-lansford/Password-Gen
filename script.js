@@ -5,15 +5,15 @@ var useUppercase = 'ABCDEFGHIJKLMNOPQRSTUVWYZ';
 var useNumbers = '1234567890';
 var useSpecialChar = '!"#$%&()*+,-./:;<=>?@[]^_`{|}~';
 
-var selectedChars = '';
+
 
 function generatePassword() {
-
+  var selectedChars = '';
   var finalPassword = '';
 
 var characterLength = prompt("Choose a password length between 8-128 character.");
-  if(isNaN(characterLength)){
-    alert("Please enter a numeric value.");
+  if(isNaN(characterLength)|| characterLength<=8 || characterLength>=128){
+    alert("Please enter a number within the range of 8-128.");
     return;
   }
 
