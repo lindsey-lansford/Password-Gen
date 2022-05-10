@@ -16,7 +16,7 @@ This application was built using HTML for the structure, CSS for the styling and
 
 The following screenshot shows the web application's appearance after the user has generated the random password:
 
-![](./screenshot.png)
+![](./Screenshot.png)
 
 
 To view this web application, [click here](https://lindsey-lansford.github.io/Password-Gen/).
